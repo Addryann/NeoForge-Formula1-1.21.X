@@ -9,7 +9,7 @@ import net.valdev.formula1Mod.Formula1Mod;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Formula1Mod.MOD_ID);
 
-    public static final DeferredItem<Item> PITCOIN = ITEMS.register("pitcoin",
+    public static final DeferredItem<Item> FORMULACOIN = ITEMS.register("formulacoin",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

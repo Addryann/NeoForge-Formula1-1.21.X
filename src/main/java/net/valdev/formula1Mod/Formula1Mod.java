@@ -1,5 +1,6 @@
 package net.valdev.formula1Mod;
 
+import net.minecraft.world.item.CreativeModeTabs;
 import net.valdev.formula1Mod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -52,6 +53,10 @@ public class Formula1Mod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.FORMULACOIN);
+        }
 
     }
 
